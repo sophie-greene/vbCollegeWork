@@ -1,0 +1,130 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="style.css" >
+<script language="javascript" >
+	function checkform()
+	{	
+		
+		 if (document.feedbackForm.name.value == null || document.feedbackForm.name.value == "") 
+			{
+   				alert ("Please enter your name");
+   				document.feedbackForm.name.focus();
+				document.feedbackForm.name.select();
+				return false;
+			}
+		if (document.feedbackForm.email.value == null || document.feedbackForm.email.value == "") 
+			{
+   				alert ("Please enter your email address");
+   				document.feedbackForm.email.focus();
+				document.feedbackForm.email.select();
+				return false;
+			}
+		if (document.feedbackForm.subject.value == null || document.feedbackForm.subject.value == "") 
+			{
+   				alert ("Please enter the subject of your feedback");
+   				document.feedbackForm.subject.focus();
+				document.feedbackForm.subject.select();
+				return false;
+			}
+		if (document.feedbackForm.msg.value == null || document.feedbackForm.msg.value == "") 
+			{
+   				alert ("Please enter your message");
+   				document.feedbackForm.msg.focus();
+				document.feedbackForm.msg.select();
+				return false;
+			}
+		if(document.feedbackForm.msg.value != "" && document.feedbackForm.subject.value !="" && document.feedbackForm.email.value != "" && document.feedbackForm.name.value  != "")
+			{
+				return true;
+				
+			}
+	}
+
+</script>
+<script language="javascript"  src="liveclock.js" >
+</script>
+<title>Techbecks Feedback Page</title>
+</head>
+<body onLoad="show_clock()">
+	<!--Page Layout Table--!>
+	<table class ="PageLayout" cellspacing="0" align="center">
+		<tr>
+			<td class="logo" height =80 width=120 align ="center"><img src="img/logo.gif"  height=80 width=120></td>
+			<td class="banner">
+						<h1>TechBecks <div class="title">Cyber Café</div></h1> 
+			</td>
+		</tr>
+		<tr valign="top" >
+			<td  class= "navMenu" align ="center">
+				<a class="nav" href ="index.html" > Home</a>				
+				<a class="nav" href ="aboutus.html" >About Us </a>
+				<a class="nav" href ="ourservices.html">Our Services </a>
+				<a class="nav" href ="prices.html">Prices</a>
+				<a class="nav" href ="opening.html">Opening Hours</a>
+				<a class="nav" href ="gallery.html">Gallery</a>
+				<a class="nav" href ="events.html">Events</a>
+				<a class="nav" href ="contactus.html">Contact Us</a>
+				<a class="nav" href ="location.html">Location</a>
+				<a class="nav" href ="feedback.html">Feedback</a>
+				<a class="nav" href ="game.html">Games</a>
+			</td>
+			<td class="bodyt">
+			<!-- Body text/// main page contents--!>
+				<br>
+				<h2>Feedback</h2>
+				<p>We, at Techbecks, value our customers' views and comments. Please fill the form below if you have any comments.</p>
+				<form name ="feedbackForm" method="post" onsubmit="return checkform();document.open('feedbackthankyou.html');">
+				<table align=center>
+  					<tbody >
+  					<tr>
+    						<td style= "color:maroon; font-family:verdana;" align="right"><b>Name:</b></td>
+    						<td><input style= " color:maroon;width:300px;" name="name"></td>
+					</tr>
+					<tr>
+						<td style= " color:maroon; font-family:verdana;" align="right"><b>Email:</b></td>
+						<td><input style= "color:maroon;width:300px;" name="email" ></td>
+					</tr>
+					<tr>
+						<td style= "color:maroon; font-family:verdana;" align="right"><b>Subject:</b></td>
+						<td><input style= " color:maroon;width:300px;" name="subject" rows=6></td>
+					</tr>
+  					
+
+  					<tr>
+    						<td style= "color:maroon; font-family:verdana;" align="right"><b>Message:</b></td>
+					</tr>
+					<tr>
+						<td align="right"></td>
+    						<td><textarea style= "color:maroon; font-family:verdana;width:300px;" name=msg rows=6 cols=40></textarea></td>
+					</tr>
+					<tr >
+					<tr>
+    						<td align=right></td>
+					</tr>
+					
+    						<td style= "color:maroon; font-family:verdana;" align=right colspan=2><b>Would you like to receive Techbecks' newsletter:</b></td>
+    						<td style= "color:maroon; font-family:verdana; font-weight:bold;"><input type="checkbox" value="yes" name="Response">
+						</td>
+					</tr>
+					<tr>
+    						<td align="right"></td>
+					</tr>
+					<tr>
+    						<td align="right"></td>
+					</tr>
+  					<tr>
+    						<td align="right"  colspan=4><input  style= "background-color:#567AD8;color:maroon; font-family:verdana;font-size:14px; font-weight:bold;" class="submit" type="submit"  value="Send"></td>
+						<td align="right"  colspan=4><input  style= "background-color:#567AD8;color:maroon; font-family:verdana;font-size:14px; font-weight:bold;" class="reset" type="reset" value="Clear"></td>
+					</tr>
+					</tbody>
+				</table>
+				</form>
+
+			</td>
+		</tr>
+	</table>
+<br>
+<div class="copyright" align="left">This Website is designed by Somoud Saqfelhait. Copyright<sup>&#174</sup> 2007</div>
+</body>
+</html>

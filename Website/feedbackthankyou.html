@@ -1,0 +1,71 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" >
+<script language="JavaScript">
+	
+        if (document.images) 
+		{
+                	okOn = new Image();
+                	okOn.src = "img/okon.jpg";
+                	okOff = new Image();
+                	okOff.src = "img/okoff.jpg";
+ 		}
+        
+        // Function to replace the off images with on images.
+        
+        function activate(image_name)
+		{
+                if (document.images) 
+			{
+                        	document[image_name].src = eval(image_name + "On.src");
+                	}
+        	}
+        
+        function deactivate(image_name) 
+		{
+                	if (document.images) 
+				{
+                        	document[image_name].src = eval(image_name + "Off.src");
+                		}
+        	}
+</script>
+<script language="javascript"  src="liveclock.js" >
+</script>
+<title>Techbecks - Thank You for Your Feedback</title>
+</head>
+<body onLoad="show_clock();">
+	<!--Page Layout Table--!>
+	<table class ="PageLayout" cellspacing="0" align="center">
+		<tr>
+			<td class="logo" height =80 width=120 align ="center"><img src="img/logo.gif"  height=80 width=120></td>
+			<td class="banner">
+						<h1>TechBecks <div class="title">Cyber Café</div></h1> 
+			</td>
+		</tr>
+		<tr valign="top" >
+			<td  class= "navMenu" align ="center">
+				<a class="nav" href ="index.html" > Home</a>				
+				<a class="nav" href ="aboutus.html" >About Us </a>
+				<a class="nav" href ="ourservices.html">Our Services </a>
+				<a class="nav" href ="prices.html">Prices</a>
+				<a class="nav" href ="opening.html">Opening Hours</a>
+				<a class="nav" href ="gallery.html">Gallery</a>
+				<a class="nav" href ="events.html">Events</a>
+				<a class="nav" href ="contactus.html">Contact Us</a>
+				<a class="nav" href ="location.html">Location</a>
+				<a class="nav" href ="feedback.html">Feedback</a>
+				<a class="nav" href ="game.html">Games</a>
+			</td>
+			<td class="bodyt">
+			<!-- Body text/// main page contents--!>
+				<br>
+				<h2>Thank you</h2>
+				<p>Your feedback has been submitted. </p><p>Click Ok to go to Home Page </p><a  href="index.html" onmouseover="activate('ok')" onmouseout="deactivate('ok')"><img name="ok" border="0" style="margin-left:300px;" src="img/OKoff.jpg" alt="Ok"></a></p>
+				
+			</td>
+		</tr>
+	</table>
+<br>
+<div class="copyright" align="left">This Website is designed by Somoud Saqfelhait. Copyright<sup>&#174</sup> 2007</div>
+</body>
+</html>

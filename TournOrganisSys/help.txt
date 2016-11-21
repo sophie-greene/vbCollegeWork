@@ -1,0 +1,10 @@
+********************************************TOS overview*****************************************
+
+TOS is a Tournament Organising Software designed to help organise Salchester Primary School annual competition.
+
+The main menu window allows the user to generate games and enter scores and help decide the winning house, it also allow the user to view statistics regarding the games organised by student, house or class.
+
+The student statistics window display a summary of each student performance in each game including the number of games played, the number of games won and the maximum score achieved by each student bin each game. Buttons are provided to allow the user to sort the scores and names in order to view the best in each game.
+
+Enjoy !!!
+

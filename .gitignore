@@ -1,0 +1,15 @@
+*
+!*/
+!*.*
+*.layout
+*.exe
+*.o
+Pckage
+Pckage/*
+Package/*
+Package
+SetupProgram
+SetupProgram/*
+
+*.log
+*.frx

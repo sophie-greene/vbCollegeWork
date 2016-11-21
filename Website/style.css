@@ -1,0 +1,160 @@
+/*cascading style sheet file*/
+a
+{
+	font-family: verdana,courier, serif;
+}
+a.nav
+
+{
+	display: block;
+	padding: 10px 3px;
+	padding-right:1%;
+	font-weight:bold;
+	font-size: 13px;
+	color: maroon;
+	background: url(img/off.jpg ) no-repeat 5% center ;
+	background-position: left
+	cursor: default;
+	text-decoration:none;
+	margin-left=2px;
+	margin-top=4px;
+}	
+
+a.nav:hover
+{
+	display: block;
+	padding: 10px 3px;
+	padding-right:1%;
+	font-weight:bold;
+	font-size: 13px;
+	color: maroon;
+	background: url(img/on.jpg )  no-repeat 5% center ;
+	background-position: left
+	cursor: default;
+	text-decoration:none;
+	margin-left=2px;
+	margin-top=4px;
+}
+
+h1
+{
+	color:maroon;
+	font-family: verdana,courier, serif;
+	font-size:36px;
+	text-align:center;
+	margin-bottom:0px;
+}
+h2
+{
+	
+	color:maroon;
+	font-family:verdana,courier, serif;
+	font-size:28px;
+	font-face:normal;
+	text-align:center;
+}
+p
+{
+	font-size:16px;
+	font-family: verdana,courier, serif;
+	text-align: justify;
+	font-weight:normal;
+	margin: 1% 10% 1% 10%;
+	color:maroon;
+}
+div.title
+{
+	color:maroon;
+	font-size:20px; 
+	font-weight:normal;
+	font-family:verdana;
+	margin-left:35%;
+}
+div.copyright
+{
+	font-size:12px;
+	FONT-FAMILY:VERDANA;
+	font-weight:normal;
+	color:maroon;	
+}
+div.post
+{
+	font-size:14px;
+	FONT-FAMILY:VERDANA;
+	font-weight:bold;
+	background-color:#567AD8;
+	color:maroon;
+	margin-left:40%;
+	width:35%;
+	padding-left:10px;
+	padding-right:10px;	
+}
+table.PageLayout
+{
+	position:relative;
+	border: 4px solid;
+	border-color: maroon; 
+	width :90%; 
+	height: 80%; 
+	background-color:white;
+	align:center;
+	cellpadding:10px;
+}
+body
+{
+	background-color:"CCCCCC";
+	background-repeat: no-repeat;
+	margin-top: 2%;
+	margin-left:5%;
+}
+
+td.navMenu
+{
+
+	border-color: maroon;
+	background: url(img/marble.gif);
+	width:125px;
+	height:60px;	
+}
+td.bodyt
+{	border-left: 3px solid;
+	border-color: maroon;
+	background: url(img/marble.gif);
+}
+td.logo
+{
+	background: url(img/marble.gif);
+}
+td.banner
+{
+	border-bottom:3px solid;
+	border-color:maroon;
+	background: url(img/banner.jpg);
+}
+
+table.listing
+{
+	font-size:14px;
+	text-align: center;
+	border:2px solid #567AD8;
+	font-family: verdana,courier, serif;
+	color:maroon;
+}
+
+td.bodytable
+{
+	width:120px;
+	border:1px solid #567AD8;
+}
+
+li
+{
+	font-family: verdana,courier, serif;
+	font-size:14px;
+	font-weight:normal;
+	margin-left:10%;
+	margin-right:10%;
+	padding-top:10px;
+	text-align: justify;
+	color:maroon;
+}
